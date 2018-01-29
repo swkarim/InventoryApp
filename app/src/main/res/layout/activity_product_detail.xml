@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/productDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/product_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <Button
+                android:id="@+id/addQuantity"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Add"/>
+
+            <TextView
+                android:id="@+id/product_detail_quantity"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/subtractQuantity"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Subtract"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/product_detail_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/product_detail_supplier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/emailSupplier"
+            android:layout_width="176dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Order more"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/deleteProduct"
+            android:layout_width="176dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="delete product"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
